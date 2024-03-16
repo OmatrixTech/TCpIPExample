@@ -1,0 +1,17 @@
+﻿<Window x:Class="TcpClientExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TcpClientExample"
+        mc:Ignorable="d"
+        Title="Tcp Client" Height="650" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Button x:Name="BtnTcpClientConnect" Content="Connect with TCP/IP server" Height="50" Click="BtnTcpClientConnect_Click" Margin="10"/>
+            <Button Cursor="Hand" x:Name="BtnSendClientData" Content="Send Data" Height="50" Click="BtnSendClientData_Click" Margin="10"/>
+            <TextBox Foreground="Red" FontSize="30" FontWeight="Bold" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" AcceptsTab="True" x:Name="TxtBxMessage" Height="220" Margin="10" BorderBrush="Gray" BorderThickness="2"/>
+            <TextBlock Foreground="Blue" FontSize="20" FontWeight="Bold" x:Name="TxtBlckInformation" Height="235" Margin="10" />
+        </StackPanel>
+    </Grid>
+</Window>
